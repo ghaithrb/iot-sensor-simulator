@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="mb-4">Dashboard IoT (MQTT)</h1>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Température</h5>
+            <p class="card-text"><span id="temp-value">--</span> <span id="temp-unit"></span></p>
+            <small class="text-muted" id="temp-time">--</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Humidité</h5>
+            <p class="card-text"><span id="hum-value">--</span> <span id="hum-unit"></span></p>
+            <small class="text-muted" id="hum-time">--</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">GPS</h5>
+            <p class="card-text">Lat: <span id="gps-lat">--</span> | Lon: <span id="gps-lon">--</span></p>
+            <small class="text-muted" id="gps-time">--</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4"/>
+    <div class="alert alert-secondary" id="status">Chargement...</div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
