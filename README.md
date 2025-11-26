@@ -10,6 +10,8 @@ Ce projet simule trois capteurs (température, humidité, GPS), publie leurs mes
 - `pip` et (optionnel) `virtualenv`
 - Broker MQTT (ex: **Eclipse Mosquitto**) qui écoute sur `localhost:1883`
 
+<img width="602" height="255" alt="Screenshot 2025-11-26 at 9 19 12 PM" src="https://github.com/user-attachments/assets/643c0b1d-6731-4c1c-a2c7-9b1d1678a0d4" />
+
 ## 🧩 Installation (Windows)
 ```powershell
 # 1) Créer un environnement virtuel
